@@ -1,0 +1,51 @@
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@100&display=swap');
+
+body {
+    font-family: 'JetBrains Mono', sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-rendering: optimizeLegibility;
+    background-color: #0e3d3f;
+}
+
+#text {
+    text-align: center;
+    align-content: center;
+    color: #ffffff;
+}
+
+#textsmall {
+    text-align: center;
+    align-content: center;
+    color: #ffffff;
+    font-size: 20px;
+}
+
+h3,
+h4 {
+    user-select: none;
+    text-align: center;
+    align-content: center;
+    color: #ffffff;
+}
+
+.time {
+    font-size: 25px;
+}
+
+.btn, .box {
+    width: 180px;
+    height: 30px;
+    border: none;
+    position: relative;
+    outline: none;
+    color: #fff;
+    text-align: center;
+    background: rgb(0, 150, 255);
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+.wrapper {
+    text-align: center;
+}
