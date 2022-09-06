@@ -5,7 +5,7 @@ body {
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     text-rendering: optimizeLegibility;
-    background-color: #0e3d3f;
+    background-color: #000000;
 }
 
 #text {
@@ -41,7 +41,7 @@ h4 {
     outline: none;
     color: #fff;
     text-align: center;
-    background: rgb(0, 150, 255);
+    background: rgb(52, 52, 52);
     cursor: pointer;
     border-radius: 10px;
 }
