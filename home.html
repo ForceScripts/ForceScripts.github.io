@@ -1,64 +1,558 @@
-<html lang="en">
-
+<!doctype html>
+<html lang="zxx">
 <head>
-    <meta charset="UTF-8">
-    <title>ForceScripts</title>
-    <meta content="#0000FF" name="theme-color">
-    <meta content="⸸♱♥IDK_FORCE♥♱⸸#7611" name="Author">
-    <meta content="Information Website" name="Description">
-    <meta content="website" property="og:type">
-    <meta content="ForceScripts" property="og:title">
-    <meta content="Information Website" property="og:description">
-    <meta content="https://github.com/ForceScripts/ForceScripts.github.io" property="og:url">
-    <meta content="https://github.com/ForceScripts/ForceScripts.github.io/IMG/logo.png" property="og:image">
-    <meta content="https://github.com/ForceScripts/ForceScripts.github.io/IMG/logo.png" property="og:image:secure_url">
-    <meta content="256" Fproperty="og:image:width">
-    <meta content="256" property="og:image:height">
-    <meta content="Hi" property="og:image:alt">
-    <meta content="width=device-width, initial-scale=1, shrink-to-fit=no" name="viewport">
-    <link href="CSS/bootstrap.min.css" rel="stylesheet">
-    <link href="CSS/home.css" rel="stylesheet">
-    <link href="CSS/ripple.css" rel="stylesheet">
-    <link href="CSS/font-awesome.css" rel="stylesheet">
-    <link href="CSS/rainbow-button.css" rel="stylesheet">
-    <link href="CSS/graphics.css" rel="stylesheet">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="theme-color" content="#151515">
+  <link rel="shortcut icon" href="img\home/FS-Logo.ico" type="image/x-icon">
+  <link rel="stylesheet" href="css/plugins/bootstrap.min.css">
+  <link rel="stylesheet" href="css/plugins/font-awesome.min.css">
+  <link rel="stylesheet" href="css/plugins/swiper.min.css">
+  <link rel="stylesheet" href="css/plugins/fancybox.min.css">
+  <link rel="stylesheet" href="css/style.css">
+  <title>Home</title>
 </head>
-<script defer src="Script/Utils.js"></script>
-<script defer src="Script/BootStrap.js"></script>
-
-<img id="video" src="../IMG/home.gif">
-
-<body onload="typeWriter(); fetchgithubdata();">
-    <header class="text-center bg-transparent important">
-        <div>
-            <img id="Main-IMG" src="IMG/logo.png">
-            <br>
-            <br>
-            <h3 id="Main-Text">ForceScripts</h3>
-            <br>
-            <a href="Social">
-                <button class="glow-on-hover buzz">Social Accounts</button>
-            </a>
-            <br>
-            <br>
-            <a href="AboutMe">
-                <button class="glow-on-hover buzz">About Me..</button>
-            </a>
-            <br>
-            <br>
-            <a href="MyGames">
-                <button class="glow-on-hover buzz">My Games</button>
-            </a>
-            <br>
-            <br>
-            <a href="Graphics">
-                <button class="glow-on-hover buzz">FIVEM GRAPHICS</button>
-            </a>
-            <br>
-            <br>
-            <p class="Github-Stats" id="count">fetching data..........</p>
+<body>
+  <div class="art-app">
+    <div class="art-mobile-top-bar"></div>
+    <div class="art-app-wrapper">
+      <div class="art-app-container">
+        <div class="art-info-bar">
+          <div class="art-info-bar-frame">
+            <div class="art-info-bar-header">
+              <a class="art-info-bar-btn" href="#.">
+                <i class="fas fa-ellipsis-v"></i>
+              </a>
+            </div>
+            <div class="art-header">
+              <div class="art-avatar">
+                <a data-fancybox="avatar" href="img\home/logo1.jpg" class="art-avatar-curtain">
+                  <img src="img\home/logo1.jpg" alt="avatar">
+                  <i class="fas fa-expand"></i>
+                </a>
+                <div class="art-lamp-light">
+                  <div class="art-available-lamp"></div>
+                </div>
+              </div>
+              <h5 class="art-name mb-10"><a href="/home.html">IDK FORCE</a></h5>
+              <div class="art-sm-text">Graphics Designer & Developer</div>
+            </div>
+            <div id="scrollbar2" class="art-scroll-frame">
+              <div class="art-table p-15-15">
+                <ul>
+                  <li>
+                    <li>
+                      <h6>Main Dev Of FS-Development:</span>
+                    </li>
+                    <li>
+                      <h6>Status: Online</span>
+                    </li>
+                    <li>
+                      <h6>Discord:</h6><span>⸸♱♥IDK_FORCE♥♱⸸#7611</span>
+                  </li>
+                </ul>
+              </div>
+              <div class="art-ls-divider"></div>
+              <div class="art-lang-skills p-30-15">
+                <div class="art-lang-skills-item">
+                  <div id="circleprog1" class="art-cirkle-progress"></div>
+                  <h6>FS-API</h6>
+                </div>
+                <div class="art-lang-skills-item">
+                  <div id="circleprog2" class="art-cirkle-progress"></div>
+                  <h6>Usage</h6>
+                </div>
+                <div class="art-lang-skills-item">
+                  <div id="circleprog3" class="art-cirkle-progress"></div>
+                  <h6>Memory</h6>
+                </div>
+              </div>
+              <div class="art-ls-divider"></div>
+              <div class="art-hard-skills p-30-15">
+                <div class="art-hard-skills-item">
+                  <div class="art-skill-heading">
+                    <h6>Cheaters</h6>
+                  </div>
+                  <div class="art-line-progress">
+                    <div id="lineprog1"></div>
+                  </div>
+                </div>
+                <div class="art-hard-skills-item">
+                  <div class="art-skill-heading">
+                    <h6>Leakers</h6>
+                  </div>
+                  <div class="art-line-progress">
+                    <div id="lineprog2"></div>
+                  </div>
+                </div>
+                <div class="art-hard-skills-item">
+                  <div class="art-skill-heading">
+                    <h6>AntiCheats</h6>
+                  </div>
+                  <div class="art-line-progress">
+                    <div id="lineprog3"></div>
+                  </div>
+                </div>
+                <div class="art-hard-skills-item">
+                  <div class="art-skill-heading">
+                    <h6>Scammers</h6>
+                  </div>
+                  <div class="art-line-progress">
+                    <div id="lineprog4"></div>
+                  </div>
+                </div>
+                <div class="art-hard-skills-item">
+                  <div class="art-skill-heading">
+                      <h6>Warden</h6>
+                    </div>
+                  <div class="art-line-progress">
+                      <div id="lineprog5"></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="art-ls-divider"></div>
+              <ul class="art-knowledge-list p-15-0">
+                <li>Anti-Cheaters</li>
+                <li>Anti-Backdoors</li>
+                <li>Anti-Leakers</li>
+                <li>Anti-Scammers</li>
+              </ul>
+              <div class="art-ls-divider"></div>
+                <div class="art-links-frame p-15-15">
+                <a href="https://discord.gg/6kJ5ubDEWE" class="art-link" download>Discord<i class="fas fa-door-open"></i></a>
+              </div>
+            </div>
+            <div class="art-ls-social">
+              <a href="#." target="_blank"><i class="far fa-circle"></i></a>
+              <a href="#." target="_blank"><i class="far fa-circle"></i></a>
+              <a href="#." target="_blank"><i class="far fa-circle"></i></a>
+              <a href="#." target="_blank"><i class="far fa-circle"></i></a>
+              <a href="#." target="_blank"><i class="far fa-circle"></i></a>
+              </div>
+                  </div>
+                    </div>
+                      <div class="art-content">
+                          <div class="art-curtain"></div>
+                        <div class="art-top-bg" style="background-image: url(img\home/banner.jpg)">
+                      <div class="art-top-bg-overlay"></div>
+                    </div>
+                    <div class="transition-fade" id="swup">
+                      <div id="scrollbar" class="art-scroll-frame">
+                        <div class="container-fluid">
+                          <div class="row p-60-0 p-lg-30-0 p-md-15-0">
+                            <div class="col-lg-12">
+                              <div class="art-a art-banner" style="background-image: url(img\home/banner.jpg)">
+                                <div class="art-banner-back"></div>
+                                <div class="art-banner-dec"></div>
+                                <div class="art-banner-overlay">
+                                  <div class="art-banner-title">
+                                    <h1 class="mb-15">Welcome To ForceScripts</h1>
+                                    <div class="art-lg-text art-code mb-25">&lt;<i>code</i>&gt; A <span class="txt-rotate" data-period="2000"
+                                        data-rotate='[ "Community With A Team Of Developers" ]'></span>&lt;/<i>code</i>&gt;</div>
+                                    <div class="art-buttons-frame">
+                                      <a href="https://discord.gg/6kJ5ubDEWE" class="art-btn art-btn-md"><span>Join Discord</span></a>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      <div class="container-fluid">
+                    <div class="row p-30-0">
+                  <div class="col-md-3 col-6">
+                    <div class="art-counter-frame">
+                      <div class="art-counter-box">
+                        <span class="art-counter">12</span><span class="art-counter-plus">+</span>
+                      </div>
+                      <h6>Years Experience</h6>
+                    </div>
+                  </div>
+                  <div class="col-md-3 col-6">
+                    <div class="art-counter-frame">
+                      <div class="art-counter-box">
+                        <span class="art-counter">0</span>
+                      </div>
+                      <h6>Partners</h6>
+                    </div>
+                  </div>
+                  <div class="col-md-3 col-6">
+                    <div class="art-counter-frame">
+                      <div class="art-counter-box">
+                        <span class="art-counter">0</span>
+                      </div>
+                      <h6>Supporters</h6>
+                    </div>
+                  </div>
+                  <div class="col-md-3 col-6">
+                    <div class="art-counter-frame">
+                          <div class="art-counter-box">
+                              <span class="art-counter">52783</span><span class="art-counter-plus">+</span>
+                            </div>
+                            <h6>Hours</h6>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  <div class="container-fluid">
+                <div class="row">
+                  <div class="col-lg-12">
+                    <div class="art-section-title">
+                      <div class="art-title-frame">
+                        <h4>What We Provide</h4>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-4 col-md-6">
+                    <div class="art-a art-service-icon-box">
+                      <div class="art-service-ib-content">
+                        <h5 class="mb-15">About Us</h5>
+                        <div class="mb-15">We Are A Team OF Developers Trying To Help People From Bad People</div>
+                        <div class="art-buttons-frame"><a href="/contact.html" class="art-link art-color-link art-w-chevron">Read More</a></div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-4 col-md-6">
+                    <div class="art-a art-service-icon-box">
+                      <div class="art-service-ib-content">
+                        <h5 class="mb-15">Mlos Creators</h5>
+                        <div class="mb-15"></div>
+                        <div class="art-buttons-frame"><a href="/mapcreators.html" class="art-link art-color-link art-w-chevron">Here Are A Bunch Of Mlos Creators</a></div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-4 col-md-6">
+                    <div class="art-a art-service-icon-box">
+                      <div class="art-service-ib-content">
+                        <h5 class="mb-15">Script Creators</h5>
+                        <div class="mb-15"></div>
+                        <div class="art-buttons-frame"><a href="/contact.html" class="art-link art-color-link art-w-chevron">Here Are A Bunch Of Scripts Creators</a></div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-4 col-md-6">
+                    <div class="art-a art-service-icon-box">
+                      <div class="art-service-ib-content">
+                        <h5 class="mb-15">Scam Websites</h5>
+                        <div class="mb-15">A List With A Bunch Of Websites That Have Scam People</div>
+                        <div class="art-buttons-frame"><a href="/contact.html" class="art-link art-color-link art-w-chevron">Read More</a></div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-4 col-md-6">
+                    <div class="art-a art-service-icon-box">
+                      <div class="art-service-ib-content">
+                        <h5 class="mb-15">Cheaters List</h5>
+                        <div class="mb-15">A List Of Cheaters</div>
+                        <div class="art-buttons-frame"><a href="/contact.html" class="art-link art-color-link art-w-chevron">Read More</a></div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-4 col-md-6">
+                    <div class="art-a art-service-icon-box">
+                      <div class="art-service-ib-content">
+                        <h5 class="mb-15">FiveM FrameWork</h5>
+                        <div class="mb-15">A List Of The FrameWorks</div>
+                        <div class="art-buttons-frame"><a href="/contact.html" class="art-link art-color-link art-w-chevron">Read More</a></div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-4 col-md-6">
+                    <div class="art-a art-service-icon-box">
+                      <div class="art-service-ib-content">
+                        <h5 class="mb-15">RedM Framework</h5>
+                        <div class="mb-15">Play Your Top High Quality Games On A Safe & Friendly Website</div>
+                        <div class="art-buttons-frame"><a href="/contact.html" class="art-link art-color-link art-w-chevron">Read More</a></div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-4 col-md-6">
+                    <div class="art-a art-service-icon-box">
+                      <div class="art-service-ib-content">
+                        <h5 class="mb-15">Custom MiniGames</h5>
+                        <div class="mb-15">Play Your Top High Quality Games On A Safe & Friendly Website</div>
+                        <div class="art-buttons-frame"><a href="/contact.html" class="art-link art-color-link art-w-chevron">Play Now</a></div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-4 col-md-6">
+                    <div class="art-a art-service-icon-box">
+                      <div class="art-service-ib-content">
+                        <h5 class="mb-15">Warden</h5>
+                        <div class="mb-15">A Bot That Interacts With A Database Of Users Who Participate In Communities Related To Cheating Or Piracy On CitizenFX Platforms.
+                        </div>
+                        <div class="art-buttons-frame"><a href="https://warden.isitleaked.com/" class="art-link art-color-link art-w-chevron">Read More</a></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="container-fluid">
+                <div class="row p-0-0">
+                  <div class="col-lg-12">
+                    <div class="art-section-title">
+                      <div class="art-title-frame">
+                        <h4>Usefull Information</h4>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-4">
+                    <div class="art-a art-price">
+                      <div class="art-price-body">
+                        <h5 class="mb-30">Discord</h5>
+                        <div class="art-price-cost">
+                        </div>
+                        <ul class="art-price-list">
+                          <li>Api</li>
+                          <li>Media Proxy</li>
+                          <li>Push Notifications</li>
+                          <li>Search</li>
+                        </ul>
+                        <a href="https://discordstatus.com/" class="art-link art-color-link art-w-chevron">Read More</a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-4">
+                    <div class="art-a art-price art-popular-price">
+                      <div class="art-price-body">
+                        <h5 class="mb-30">FiveM</h5>
+                        <div class="art-price-cost">
+                        </div>
+                        <ul class="art-price-list">
+                          <li>CnL</li>
+                          <li>Policy</li>
+                          <li>Keymaster</li>
+                          <li>Forums</li>
+                          <li>Server List Frontend</li>
+                          <li>Runtime</li>
+                          <li>IDMS</li>
+                        </ul>
+                        <a href="https://status.cfx.re/" class="art-link art-color-link art-w-chevron">Read More</a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-4">
+                    <div class="art-a art-price">
+                      <div class="art-price-body">
+                        <h5 class="mb-30">FS-AntiCheat</h5>
+                        <h5 class="mb-30">Coming Soon!</h5>
+                        <div class="art-price-cost">
+                          <div class="art-number"><span>$</span>25<span>m</div>
+                        </div>
+                        <ul class="art-price-list">
+                          <li>Bans Users</li>
+                          <li>Warns Users</li>
+                          <li>Checks Users</li>
+                          <li>Server AdminMenu</li>
+                          <li>WebAdminPanel</li>
+                        </ul>
+                        <a href="/home.html" class="art-link art-color-link art-w-chevron">Store</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="container-fluid">
+                <div class="row">
+                  <div class="col-lg-12">
+                    <div class="art-section-title">
+                      <div class="art-title-frame">
+                        <h4>Recommendations</h4>
+                      </div>
+                    </div>
+                  </div>
+                <div class="col-lg-12">
+                    <div class="swiper-container art-testimonial-slider" style="overflow: visible">
+                      <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                          <div class="art-a art-testimonial">
+                            <div class="testimonial-body">
+                              <img class="art-testimonial-face" src="img/recommendations/IrishStevie.jpg" alt="face">
+                              <h5>IrishStevie</h5>
+                              <div class="art-el-suptitle mb-15">User</div>
+                              <div class="mb-15">He Fucked Me Cuz i Didnt Finish My Server On Time</div>
+                            </div>
+                            <div class="art-testimonial-footer">
+                              <div class="art-left-side">
+                                <ul class="art-star-rate">
+                                  <li><i class="fas fa-star"></i></li>
+                                  <li><i class="fas fa-star"></i></li>
+                                  <li><i class="fas fa-star"></i></li>
+                                  <li><i class="fas fa-star"></i></li>
+                                  <li><i class="fas fa-star"></i></li>
+                                </ul>
+                              </div>
+                              <div class="art-right-side">
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="swiper-slide">
+                          <div class="art-a art-testimonial">
+                            <div class="testimonial-body">
+                              <img class="art-testimonial-face" src="img/recommendations/Nano.jpg" alt="face">
+                              <h5>Nano</h5>
+                              <div class="art-el-suptitle mb-15">User</div>
+                              <div class="mb-15">Force Is Very Knowledgeable With Scripts & MLO's, Very Reliable & Honest Person He Is One Of The Most Genuine Person I’ve Had The Pleasure Of Dealing With In The GTA/FiveM Community.</div>
+                            </div>
+                            <div class="art-testimonial-footer">
+                              <div class="art-left-side">
+                                <ul class="art-star-rate">
+                                  <li><i class="fas fa-star"></i></li>
+                                  <li><i class="fas fa-star"></i></li>
+                                  <li><i class="fas fa-star"></i></li>
+                                  <li><i class="fas fa-star"></i></li>
+                                  <li><i class="fas fa-star"></i></li>
+                                </ul>
+                              </div>
+                              <div class="art-right-side">
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="swiper-slide">
+                          <div class="art-a art-testimonial">
+                            <div class="testimonial-body">
+                              <img class="art-testimonial-face" src="img/recommendations/DeadShot.jpg" alt="face">
+                              <h5>DeadShot</h5>
+                              <div class="art-el-suptitle mb-15">User</div>
+                              <div class="mb-15">ThankYou For The Opportunity Of Being On Your Website</div>
+                            </div>
+                            <div class="art-testimonial-footer">
+                              <div class="art-left-side">
+                                <ul class="art-star-rate">
+                                  <li><i class="fas fa-star"></i></li>
+                                  <li><i class="fas fa-star"></i></li>
+                                  <li><i class="fas fa-star"></i></li>
+                                  <li><i class="fas fa-star"></i></li>
+                                  <li><i class="fas fa-star"></i></li>
+                                </ul>
+                              </div>
+                              <div class="art-right-side">
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="swiper-slide">
+                          <div class="art-a art-testimonial">
+                            <div class="testimonial-body">
+                              <img class="art-testimonial-face" src="img/recommendations/Marshy.jpg" alt="face">
+                              <h5>Marshy</h5>
+                              <div class="art-el-suptitle mb-15">User</div>
+                              <div class="mb-15">I Personally I Think That This Service Is Immaculate, It Helps Me Get All The Leaked Scripts Away And Everything Is Very Nice In The Long Run... $25 Is A Bit Of Money But It Is Worth It And You Have To Trust Me</div>
+                            </div>
+                            <div class="art-testimonial-footer">
+                              <div class="art-left-side">
+                                <ul class="art-star-rate">
+                                  <li><i class="fas fa-star"></i></li>
+                                  <li><i class="fas fa-star"></i></li>
+                                  <li><i class="fas fa-star"></i></li>
+                                  <li><i class="fas fa-star"></i></li>
+                                </ul>
+                              </div>
+                              <div class="art-right-side">
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="swiper-slide">
+                          <div class="art-a art-testimonial">
+                            <div class="testimonial-body">
+                              <img class="art-testimonial-face" src="img/recommendations/Les.jpg" alt="face">
+                              <h5>ScriptQueen</h5>
+                              <div class="art-el-suptitle mb-15">User</div>
+                              <div class="mb-15">Worse Cunt I Know To Be Honest The Cunt Cant Even Code For Shit He Steals Everything</div>
+                            </div>
+                            <div class="art-testimonial-footer">
+                              <div class="art-left-side">
+                                <ul class="art-star-rate">
+                                  <li><i class="fas fa-star"></i></li>
+                                  <li><i class="fas fa-star"></i></li>
+                                  <li><i class="fas fa-star"></i></li>
+                                </ul>
+                              </div>
+                              <div class="art-right-side">
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-12">
+                    <div class="art-slider-navigation">
+                      <div class="art-sn-left">
+                        <div class="swiper-pagination"></div>
+                      </div>
+                      <div class="art-sn-right">
+                        <div class="art-slider-nav-frame">
+                          <div class="art-slider-nav art-testi-swiper-prev"><i class="fas fa-chevron-left"></i></div>
+                          <div class="art-slider-nav art-testi-swiper-next"><i class="fas fa-chevron-right"></i></div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="container-fluid">
+                <footer>
+                  <div>© 2022 ForceScripts</div>
+                  <div>Creator:&#160; <a href="https://github.com/IDKFORCE" target="_blank">IDKFORCE</a></div>                </footer>
+              </div>
+            </div>
+          </div>
         </div>
-    </header>
-</body>
-
+        <div class="art-menu-bar">
+          <div class="art-menu-bar-frame">
+            <div class="art-menu-bar-header">
+              <a class="art-menu-bar-btn" href="#.">
+                <span></span>
+              </a>
+            </div>
+            <div class="art-current-page"></div>
+            <div class="art-scroll-frame">
+              <nav id="swupMenu">
+                <ul class="main-menu">
+                  <li class="menu-item current-menu-item"><a href="/home.html">Home</a></li>
+                  <li class="menu-item menu-item-has-children">
+                    <a href="#.">What We Provide</a>
+                    <ul class="sub-menu">
+                      <li class="menu-item"><a href="/404.html">About US</a></li>
+                      <li class="menu-item"><a href="Graphics.html">Mlo Creators</a></li>
+                      <li class="menu-item"><a href="/404.html">Script Creators</a></li>
+                      <li class="menu-item"><a href="/404.html">Scam Websites</a></li>
+                      <li class="menu-item"><a href="/404.html">Cheaters List</a></li>
+                      <li class="menu-item"><a href="/404.html">FiveM FrameWork</a></li>
+                      <li class="menu-item"><a href="//404.html">RedM FrameWork</a></li>
+                      <li class="menu-item"><a href="/404.html">Custom MiniGames</a></li>
+                      <li class="menu-item"><a href="https://warden.isitleaked.com/">Warden</a></li>
+                       </ul>
+                    </li>
+                  </li>
+                </ul>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="art-preloader">
+      <div class="art-preloader-content">
+        <h4>Loading...</h4>
+        <div id="preloader" class="art-preloader-load"></div>
+      </div>
+    </div>
+  </div>
+  <script src="js/plugins/jquery.min.js"></script>
+  <script src="js/plugins/anime.min.js"></script>
+  <script src="js/plugins/swiper.min.js"></script>
+  <script src="js/plugins/progressbar.min.js"></script>
+  <script src="js/plugins/smooth-scrollbar.min.js"></script>
+  <script src="js/plugins/overscroll.min.js"></script>
+  <script src="js/plugins/typing.min.js"></script>
+  <script src="js/plugins/isotope.min.js"></script>
+  <script src="js/plugins/fancybox.min.js"></script>
+  <script src="js/plugins/swup.min.js"></script>
+  <script src="js/main.js"></script>
+  </body>
 </html>
